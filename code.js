@@ -1,7 +1,7 @@
-// Show and bring to top
-function showAndMakeTop(element) {
+// New window: show and bring to top
+function newWindow(element) {
     $(element).show();
-    $(element).bringToTop();
+    $(element).selectWindow();
 }
 
 $( function() {
@@ -18,12 +18,18 @@ $( function() {
     (function() {
         var highest = 100;
 
-        $.fn.bringToTop = function() {
-            this.css('z-index', ++highest); // increase highest by 1 and set the style
+        $.fn.selectWindow = function() {
+            // Make top
+            this.css('z-index', ++highest);
+            // Make this window selected and others not
+            this.addClass('selectedwindow');
+            $('.window').not(this).each(function(){
+                $(this).removeClass('selectedwindow');
+             });
         };
     })();
     $('.window').click(function() {
-        $(this).bringToTop();
+        $(this).selectWindow();
     });
 
     // Icon single click

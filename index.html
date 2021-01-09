@@ -14,7 +14,7 @@
     <div id="window1" class="window" style="position: absolute; top: 100px; left: 100px; width: 500px; height: 400px; z-index: 1">
       <div class="windowheader">
         <div class="windowclose"></div>
-        <div class="windowtitle">Test</div>
+        <div class="windowtitle">Introduction</div>
       </div>
       <div class="windowinner">
         <div class="fullwindowhtml">
@@ -35,22 +35,22 @@
       </div>
     </div>
 
-    <div id="window3" class="window" style="position: absolute; top: 400px; left: 400px; width: 500px; height: 300px; z-index: 3">
+    <div id="window3" class="window selectedwindow" style="position: absolute; top: 400px; left: 400px; width: 500px; height: 300px; z-index: 3">
       <div class="windowheader">
         <div class="windowclose"></div>
-        <div class="windowtitle">Test</div>
+        <div class="windowtitle">Program Manager</div>
       </div>
       <div class="windowinner">
         <div class="fullwindowicons">
-          <div class="icon" ondblclick="showAndMakeTop('#clock')">
+          <div class="icon" ondblclick="newWindow('#clock')">
             <img src="icons/clock.png">
             <p>Clock</p>
           </div>
-          <div class="icon" ondblclick="showAndMakeTop('#dosprompt')">
+          <div class="icon" ondblclick="newWindow('#dosprompt')">
             <img src="icons/dos.png">
             <p>MS-DOS</p>
           </div>
-          <div class="icon" ondblclick="showAndMakeTop('#doom')">
+          <div class="icon" ondblclick="newWindow('#doom')">
             <img src="icons/doom.png">
             <p>DOOM</p>
           </div>

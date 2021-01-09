@@ -34,17 +34,22 @@ html, body {
 }
 
 .windowheader {
-    background-color: darkblue;
+    background-color: lightgrey;
+    color: black;
     border-bottom: 1px solid black;
     font-size: 14px;
-    height: 20px;
+    height: 20px; 
+}
+
+.selectedwindow .windowheader {
+    background-color: darkblue;
+    color: white;
 }
 
 .windowtitle {
     padding: 2px;
     line-height: 16px;
     text-align: center;
-    color: white;
     cursor: default;
 }
 
