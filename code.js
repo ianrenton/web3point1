@@ -34,7 +34,7 @@ $( function() {
     $( ".window" ).resizable({ handles: "all", alsoresize: ".windowinner" });
 
     // Window close
-    $('.windowclose').on("click", function () { $(this).parents('div.window').hide(); });
+    $('.windowclose').on("dblclick", function () { $(this).parents('div.window').hide(); });
 
     // Window click-to-bring-to-top
     (function() {
