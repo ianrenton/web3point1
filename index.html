@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div id="window3" class="window" style="position: absolute; top: 400px; left: 400px; width: 500px; height: 400px; z-index: 3">
+    <div id="window3" class="window" style="position: absolute; top: 400px; left: 400px; width: 500px; height: 300px; z-index: 3">
       <div class="windowheader">
         <div class="windowclose"></div>
         <div class="windowtitle">Test</div>
@@ -49,6 +49,10 @@
           <div class="icon" ondblclick="showAndMakeTop('#dosprompt')">
             <img src="icons/dos.png">
             <p>MS-DOS</p>
+          </div>
+          <div class="icon" ondblclick="showAndMakeTop('#doom')">
+            <img src="icons/doom.png">
+            <p>DOOM</p>
           </div>
         </div>
       </div>
@@ -70,7 +74,6 @@
       </div>
     </div>
 
-
     <div id="dosprompt" class="window" style="position: absolute; top: 250px; left: 250px; width: 600px; height: 350px; z-index: 5; display: none">
       <div class="windowheader">
         <div class="windowclose"></div>
@@ -78,6 +81,16 @@
       </div>
       <div class="windowinner">
         <textarea class="fullwindowdosprompt">C:\> </textarea>
+      </div>
+    </div>
+
+    <div id="doom" class="window" style="position: absolute; top: 150px; left: 150px; width: 640px; height: 480px; z-index: 6; display: none">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">DOOM</div>
+      </div>
+      <div class="windowinner">
+        <img src="misc/doom.png"/>
       </div>
     </div>
   </body>
