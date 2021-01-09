@@ -2,6 +2,28 @@
 function newWindow(element) {
     $(element).show();
     $(element).selectWindow();
+
+    if (element == '#doom') {
+    	loadDoom();
+    }
+}
+
+
+// Load DOOM, because we can
+function loadDoom() {
+	$.getScript('https://js-dos.com/6.22/current/js-dos.js', function() {
+		Dos(document.getElementById("doomcanvas"), {
+	        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+	        cycles: 1000,
+	        autolock: false,
+	    }).ready(function (fs, main) {
+	      fs.extract("https://js-dos.com/cdn/upload/DOOM-@evilution.zip").then(function () {
+	        main(["-c", "cd DOOM", "-c", "DOOM.EXE"]).then(function (ci) {
+	            window.ci = ci;
+	        });
+	      });
+	    });
+	});
 }
 
 $( function() {

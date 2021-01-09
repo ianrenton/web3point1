@@ -144,3 +144,10 @@ textarea.fullwindowdosprompt {
     background-color: darkblue;
     color: white;
 }
+
+/* DOOM */
+#doomcanvas {
+    background-color: black;
+    width: 640px;
+    height: 480px;
+}
