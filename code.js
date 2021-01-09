@@ -50,7 +50,7 @@ $( function() {
              });
         };
     })();
-    $('.window').click(function() {
+    $('.window').mousedown(function() {
         $(this).selectWindow();
     });
 
