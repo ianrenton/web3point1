@@ -27,8 +27,8 @@ HTML, CSS and JS are mine.
 
 I have also included (with many thanks):
 
-* [Windows 3.1 Icons](https://github.com/mRB0/many-windows-3.1-icons-in-png-format)
+* Some [Windows 3.1 Icons](https://github.com/mRB0/many-windows-3.1-icons-in-png-format)
 * [W95FA font](https://fontsarena.com/w95fa-by-fontsarena/)
 * [Less Perfect DOS VGA font](https://laemeur.sdf.org/fonts/)
 
-The software also loads jQuery, jQuery UI, JS-DOS and DOOM from 3rd party CDNs
+The software also loads jQuery, jQuery UI, jQuery UI Touch Punch, JS-DOS and DOOM from 3rd party CDNs
