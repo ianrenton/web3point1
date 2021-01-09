@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Windows 3.1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="code.js"></script>
+  
+  </head>
+  <body>
+    <div id="window1" class="window" style="position: absolute; top: 100px; left: 100px; width: 500px; height: 400px; z-index: 1">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">Test</div>
+      </div>
+      <div class="windowinner">
+        <div class="fullwindowhtml">
+          <p>This is a test of trying to replicate Windows 3.1 style and interations in HTML, CSS & JS.</p>
+          <p>Created by <a href="https://ianrenton.com">Ian Renton</a>.</p>
+          <p>But nobody knows why...</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="window2" class="window" style="position: absolute; top: 250px; left: 200px; width: 500px; height: 400px; z-index: 2">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">Write - TEXTBO~1.WRI</div>
+      </div>
+      <div class="windowinner">
+        <textarea class="fullwindowtextarea">This text is editable</textarea>
+      </div>
+    </div>
+
+    <div id="window3" class="window" style="position: absolute; top: 400px; left: 400px; width: 500px; height: 400px; z-index: 3">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">Test</div>
+      </div>
+      <div class="windowinner">
+        <div class="fullwindowicons">
+          <div class="icon" ondblclick="showAndMakeTop('#clock')">
+            <img src="icons/clock.png">
+            <p>Clock</p>
+          </div>
+          <div class="icon" ondblclick="showAndMakeTop('#dosprompt')">
+            <img src="icons/dos.png">
+            <p>MS-DOS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="clock" class="window" style="position: absolute; top: 260px; left: 260px; width: 250px; height: 250px; z-index: 4; display: none">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">Clock</div>
+      </div>
+      <div class="windowmenubar">
+        <div class="menuitem">Settings</div>
+      </div>
+      <div class="windowinner" style="background-color: lightgrey">
+        <div class="fullwindowhtml">
+          <div style="margin-top: 70px; font-family: Arial, sans-serif; font-size: 40px; text-align:center">04:20:00 PM</div>
+          <div style="margin-top: 5px; font-family: Arial, sans-serif; font-size: 20px; text-align:center">6/9/69</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="dosprompt" class="window" style="position: absolute; top: 250px; left: 250px; width: 600px; height: 350px; z-index: 5; display: none">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">MS-DOS Prompt</div>
+      </div>
+      <div class="windowinner">
+        <textarea class="fullwindowdosprompt">C:\> </textarea>
+      </div>
+    </div>
+  </body>
+</html>

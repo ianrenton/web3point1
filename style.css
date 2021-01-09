@@ -1,0 +1,141 @@
+/* Fonts */
+@font-face {
+    font-family: 'WinThreeOne';
+    src: url('fonts/w95fa.woff2') format('woff2'),
+         url('fonts/w95fa.woff') format('woff');
+}
+@font-face {
+    font-family: 'DOS';
+    src: url('fonts/LessPerfectDOSVGA.woff2') format('woff2'),
+         url('fonts/LessPerfectDOSVGA.woff') format('woff');
+}
+
+/* Overall */
+html, body { 
+    width:100%; 
+    height:100%; 
+    margin:0; 
+    overflow: hidden;
+    font-family: 'WinThreeOne', sans-serif;
+    background-color: #00ADAC;
+    font-size: 12px;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+
+/* Windows */
+.window {
+    padding: 4px;
+    background-color: white;
+    box-shadow:
+        inset 0 0 0 1px black,
+        inset 0 0 0 3px lightgrey,
+        inset 0 0 0 4px black;
+}
+
+.windowheader {
+    background-color: darkblue;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    height: 20px;
+}
+
+.windowtitle {
+    padding: 2px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+    cursor: default;
+}
+
+.windowclose {
+    float: left;
+    display: inline-block;
+    width: 15px;
+    height: 19px;
+    padding: 0 0 1px 5px;
+    background-color: lightgrey;
+    border-right: 1px solid black;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px darkgrey;
+    cursor: default;
+}
+
+.windowmenubar {
+    background-color: white;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    height: 12px;
+    padding: 4px;
+    line-height: 16px;
+    cursor: default;
+}
+
+.windowclose::before {
+    content: '-';
+}
+
+.ui-icon-gripsmall-diagonal-se {
+    background-image: none !important;
+}
+
+/* Window contents */
+.windowinner {
+    height: calc(100% - 21px);
+    width: 100%;
+    overflow: hidden;
+}
+.windowmenubar + .windowinner {
+    height: calc(100% - 42px) !important;
+}
+
+.fullwindowhtml {
+    padding: 0px 8px;
+}
+
+textarea.fullwindowtextarea {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: 'WinThreeOne', sans-serif;
+    font-size: 12px;
+}
+
+textarea.fullwindowdosprompt {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: lightgrey;
+    font-family: 'DOS', monospace;
+    font-size: 16px;
+}
+
+/* Icons */
+.icon {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.icon p {
+    display: block;
+    margin: 5px auto 0 auto;
+    padding: 2px;
+    cursor: default;
+}
+
+.icon p.highlight {
+    background-color: darkblue;
+    color: white;
+}
